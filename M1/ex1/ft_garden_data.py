@@ -1,11 +1,18 @@
+"""Entry-point program for Module 1 exercise 1
+
+Initialize 3 Plants and show their basic info.
+"""
 class Plant:
+    """Plant class containing, name, height and age"""
     def __init__(self, name: str, height: int, age: int):
+        """Initialize a Plant with a name, heigh and age."""
         self.name = name
         self.height = height
         self.age = age
 
 
-    def print_info(self):
+    def print_info(self) -> None:
+        """Prints basic info about the plant created"""
         print(f"{self.name}: {self.height}cm, {self.age} days old")
 
 
