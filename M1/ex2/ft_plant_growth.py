@@ -22,16 +22,16 @@ class Plant:
         self._height += 1
         self._age += 1
 
-    def print_info(self) -> None:
-        """Prints info about the plant created."""
-        print(f"{self._name}: {self._height}cm, {self._age} days old")
+    def get_info(self, name: str | None = None) -> str:
+        """Retrieves basic info of a plant"""
+        return f"{self._name} ({name}): {self._height}cm, {self._age} days"
 
 
 if __name__ == "__main__":
     rose: Plant = Plant("Rose", 25, 30)
     height: int = rose.height()
     print("=== Day 1 ===")
-    rose.print_info()
+    print(rose.get_info())
     rose.grow()
     rose.grow()
     rose.grow()
@@ -39,5 +39,5 @@ if __name__ == "__main__":
     rose.grow()
     rose.grow()
     print("=== Day 7 ===")
-    rose.print_info()
+    print(rose.get_info())
     print(f"Growth this week: +{rose.height() - height}cm")

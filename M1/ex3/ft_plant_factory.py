@@ -26,15 +26,16 @@ class Plant:
         self._age += 1
 
 
-    def print_info(self) -> None:
-        """Prints basic info of the Plant created"""
-        print(f"{self._name}: {self._height}cm, {self._age} days old")
+    def get_info(self, name: str | None = None) -> str:
+        """Retrieves basic info of a plant"""
+        return f"{self._name} ({name}): {self._height}cm, {self._age} days"
 
 
 if __name__ == "__main__":
+    print("=== Plant Factory Output ===")
     rose: Plant = Plant("Rose", 25, 30)
     oak: Plant = Plant("Oak", 200, 365)
     cactus: Plant = Plant("Cactus", 5, 90)
     sunflower: Plant = Plant("Sunflower", 80, 45)
     fern: Plant = Plant("Fern", 15, 120)
-    print(f"\nTotal plants created: {Plant.total_plants_created}")
+    print(f"Total plants created: {Plant.total_plants_created}")

@@ -36,8 +36,8 @@ class SecurePlant:
            as negative numbers
         """
         if height < 0:
-            print(f"\nInvalid operation attempted: height {height}cm [REJECTED]")
-            print("Security: Negative height rejected\n")
+            print(f"Invalid operation attempted: height {height}cm [REJECTED]")
+            print("Security: Negative height rejected")
         else:
             self._height = height
             print(f"Height updated: {self._height}cm [OK]")
@@ -47,10 +47,9 @@ class SecurePlant:
         self._height += 1
         self._age += 1
 
-
-    def print_info(self) -> None:
-        """Prints basic info of the plant created."""
-        print(f"Current plant: {self._name} ({self._height}cm, {self._age} days)")
+    def get_info(self, name: str | None = None) -> str:
+        """Retrieves basic info of a plant"""
+        return f"{self._name} ({name}): {self._height}cm, {self._age} days"
 
 
 if __name__ == "__main__":
@@ -59,4 +58,4 @@ if __name__ == "__main__":
     rose.set_height(25)
     rose.set_age(30)
     rose.set_height(-5)
-    rose.print_info()
+    print(rose.get_info())

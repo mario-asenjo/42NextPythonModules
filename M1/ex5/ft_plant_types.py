@@ -11,7 +11,7 @@ class Plant:
         self._height = height
         self._age = age
 
-    def	get_name(self) -> str:
+    def get_name(self) -> str:
         """Getter for name attribute"""
         return self._name
 
@@ -34,7 +34,7 @@ class Plant:
 
     def set_height(self, height: int) -> None:
         """Setter with validations for height attribute"""
-        if (height < 0):
+        if height < 0:
             print(
                 f"\nInvalid operation attempted: height {height}cm [REJECTED]"
             )
@@ -61,7 +61,7 @@ class Flower(Plant):
         """
         super().__init__(name, height, age)
         self.color = color
-        print(f"{self.get_info("Flower")}, {self.color} color")
+        print(f"{self.get_info('Flower')}, {self.color} color")
 
     def bloom(self):
         """Prints the blooming of the Flower"""
@@ -76,7 +76,7 @@ class Tree(Plant):
         """
         super().__init__(name, height, age)
         self.trunk_diameter: int = self.get_height() // 10
-        print(f"{self.get_info("Tree")}, {self.trunk_diameter}cm diameter")
+        print(f"{self.get_info('Tree')}, {self.trunk_diameter}cm diameter")
 
     def produce_shade(self):
         """Prints the shade this tree would produce"""
@@ -94,7 +94,7 @@ class Vegetable(Plant):
         super().__init__(name, height, age)
         self.harvest_season = harvest_season
         self.nutritional_value = nutritional_value
-        print(f"{self.get_info("Vegetable")}, {self.harvest_season} harvest")
+        print(f"{self.get_info('Vegetable')}, {self.harvest_season} harvest")
 
     def print_nutritional_value(self):
         """Prints the nutritional value of the Vegetable"""
@@ -109,9 +109,9 @@ if __name__ == "__main__":
     tulip.bloom()
 
     oak: Tree = Tree("oak", 500, 1825)
-    spurse: Tree = Tree("spurse", 500, 1825)
+    sparse: Tree = Tree("sparse", 500, 1825)
     oak.produce_shade()
-    spurse.produce_shade()
+    sparse.produce_shade()
 
     tomato: Vegetable = Vegetable("tomato", 80, 90, "summer", "vitamin C")
     lettuce: Vegetable = Vegetable("lettuce", 80, 90, "summer", "vitamin C")
