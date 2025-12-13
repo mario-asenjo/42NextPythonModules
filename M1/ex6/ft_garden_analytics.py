@@ -4,6 +4,7 @@ Analytics garden management system with nested statistics and
 a small inheritance hierarchy.
 """
 
+
 class Plant:
     """Base plant type used in the garden analytics system"""
     def __init__(self, name: str, height: int) -> None:
@@ -49,7 +50,8 @@ class FloweringPlant(Plant):
 
 class PrizeFlower(FloweringPlant):
     """Special flowering plant which has prize_points."""
-    def __init__(self, name: str, height: int, color: str, prize_points: int) -> None:
+    def __init__(self, name: str, height: int, color: str,
+                 prize_points: int) -> None:
         """Create a PrizeFlower with aditional prize_points"""
         super().__init__(name, height, color)
         self._prize_points: int = prize_points
@@ -59,56 +61,56 @@ class PrizeFlower(FloweringPlant):
         return f"{super().get_info()}, Prize points: {self._prize_points}"
 
 
-class GardenStats:
-    """Helper class to track statistics for a garden"""
-    def __init__(self) -> None:
-        """Create counters for analytics"""
-        self._plants_added: int = 0
-        self._total_growth: int = 0
-        self._regular_count: int = 0
-        self._flowering_count: int = 0
-        self._prize_count: int = 0
-
-    def register_plant(self, plant: Plant) -> None:
-        """Update counters when a new plant is added."""
-        self._plants_added += 1
-        plant_type: str = plant.get_plant_type()
-        if plant_type == "prize":
-            self._prize_count+= 1
-        elif plant_type == "flowering":
-            self._flowering_count += 1
-        else:
-            self._regular_count+= 1
-
-    def register_gorwth(self, amount: int) -> None:
-        """Record additional growth for analytics"""
-        self._total_growth += amount
-
-    def get_plants_added(self) -> int:
-        return self._plants_added
-
-    def get_total_growth(self) -> int:
-        return self._total_growth
-
-    def get_regular_count(self) -> int:
-        return self._regular_count
-
-    def get_flowering_count(self) -> int:
-        return self._flowering_count
-
-    def get_prize_count(self) -> int:
-        return self._prize_count
-
-
 class GardenManager:
     """Manager for a single garden and its analytics"""
     total_gardens_managed: int = 0
+
+    class GardenStats:
+        """Helper nested class to track statistics for a garden"""
+
+        def __init__(self) -> None:
+            """Create counters for analytics"""
+            self._plants_added: int = 0
+            self._total_growth: int = 0
+            self._regular_count: int = 0
+            self._flowering_count: int = 0
+            self._prize_count: int = 0
+
+        def register_plant(self, plant: Plant) -> None:
+            """Update counters when a new plant is added."""
+            self._plants_added += 1
+            plant_type: str = plant.get_plant_type()
+            if plant_type == "prize":
+                self._prize_count += 1
+            elif plant_type == "flowering":
+                self._flowering_count += 1
+            else:
+                self._regular_count += 1
+
+        def register_gorwth(self, amount: int) -> None:
+            """Record additional growth for analytics"""
+            self._total_growth += amount
+
+        def get_plants_added(self) -> int:
+            return self._plants_added
+
+        def get_total_growth(self) -> int:
+            return self._total_growth
+
+        def get_regular_count(self) -> int:
+            return self._regular_count
+
+        def get_flowering_count(self) -> int:
+            return self._flowering_count
+
+        def get_prize_count(self) -> int:
+            return self._prize_count
 
     def __init__(self, owner_name: str) -> None:
         """Create a garden manager for a specific owner."""
         self._owner_name: str = owner_name
         self._plants: list[Plant] = []
-        self.stats: GardenStats = GardenStats()
+        self.stats: GardenManager.GardenStats = GardenManager.GardenStats()
         GardenManager.total_gardens_managed += 1
 
     def get_owner(self) -> str:
@@ -152,7 +154,8 @@ class GardenManager:
             print(f"- {plant.get_info()}")
         print(
             "Plants added: "
-            f"{self.stats.get_plants_added()}, Total growth: {self.stats.get_total_growth()}cm"
+            f"{self.stats.get_plants_added()}, "
+            f"Total growth: {self.stats.get_total_growth()}cm"
         )
         print(
             "Plant types: "
@@ -164,6 +167,7 @@ class GardenManager:
         own_score: int = GardenManager.compute_score(self.stats)
         their_score: int = GardenManager.compute_score(other_manager.stats)
         print(
+            f"Height validation test: {is_valid_height}\n"
             "Garden scores - "
             f"{self._owner_name}: {own_score}, {other_manager.get_owner()}: {their_score}"
         )

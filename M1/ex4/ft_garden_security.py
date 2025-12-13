@@ -2,6 +2,8 @@
 
 Secure the access to members inside Plant class.
 """
+
+
 class SecurePlant:
     def __init__(self, name: str, height: int, age: int):
         """Initialize a Plant with name, height and age."""
@@ -10,11 +12,9 @@ class SecurePlant:
         self._age = age
         print(f"Plant created: {self._name}")
 
-
     def get_age(self) -> int:
         """Getter for age attribute"""
         return self._age
-
 
     def set_age(self, age: int) -> None:
         """Setter for age, handles invalid numbers as negative numbers"""
@@ -25,11 +25,9 @@ class SecurePlant:
             self._age = age
             print(f"Age updated: {self._age} days [OK]")
 
-
     def get_height(self):
         """Getter for height attribute"""
         return self._height
-
 
     def set_height(self, height: int) -> None:
         """Setter for height attribute, handles invalid numbers

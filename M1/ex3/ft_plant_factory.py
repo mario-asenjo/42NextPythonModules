@@ -2,11 +2,14 @@
 
 Creation of several Plant and recording the ammount we created.
 """
+
+
 class Plant:
     """Base Plant class with name, height and age, which records
        each time we create a new plant
     """
     total_plants_created: int = 0
+
     def __init__(self, name: str, height: int, age: int):
         self._name = name.capitalize()
         self._height = height
@@ -14,17 +17,14 @@ class Plant:
         Plant.total_plants_created += 1
         print(f"Created: {self._name} ({self._height}cm, {self._age} days)")
 
-
     def age(self) -> int:
         """Getter for age attribute"""
         return self._age
-
 
     def grow(self) -> None:
         """Simulation of growth during a full day"""
         self._height += 1
         self._age += 1
-
 
     def get_info(self, name: str | None = None) -> str:
         """Retrieves basic info of a plant"""

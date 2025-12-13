@@ -2,6 +2,8 @@
 
 Specialized plant types in the garden!
 """
+
+
 class Plant:
     """Base Plant class with basic info and getters and setters for
        age and height and also a method to retrieve basic info"""
@@ -82,12 +84,18 @@ class Tree(Plant):
         """Prints the shade this tree would produce"""
         radius: int = self.trunk_diameter // 10
         area: int = 31416 * radius**2
-        print(f"{self._name} provides {area // 10000} square meters of shade\n")
+        print(
+            f"{self._name} provides {area // 10000} square meters of shade\n"
+        )
 
 
 class Vegetable(Plant):
-    """Vegetable class inherits Plant so all of its data belongs to Vegetable"""
-    def __init__(self, name: str, height: int, age: int, harvest_season: str, nutritional_value: str):
+    """
+    Vegetable class inherits Plant so all of its data belongs to Vegetable
+    """
+    def __init__(
+            self, name: str, height: int,
+            age: int, harvest_season: str, nutritional_value: str):
         """Initializes a Plant with name, height and age, then sets the
            harvest_season and nutritional values for Vegetable
         """

@@ -2,6 +2,8 @@
 
 Simulation of plant growth ovew an entire week.
 """
+
+
 class Plant:
     """Base class for a Plant with name, height and age"""
     def __init__(self, name: str, height: int, age: int):
