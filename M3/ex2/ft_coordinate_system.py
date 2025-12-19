@@ -35,21 +35,22 @@ def main(args: list[str]) -> None:
         print('\nParsing coordinates: "%s"' % args[1])
         try:
             initial_pos = parse_arguments(args, 1)
+            print("Parsed position:", initial_pos)
+            print(f"Distance between {player} and {initial_pos}: %.1f" % calculate_distance(*player, *initial_pos))
+            print('\nParsing invalid coordinates: "%s"' % args[2])
         except TypeError:
             return
-        print("Parsed position:", initial_pos)
-        print(f"Distance between {player} and {initial_pos}: %.1f" % calculate_distance(*player, *initial_pos))
-        print('\nParsing invalid coordinates: "%s"' % args[2])
         try:
             final_pos = parse_arguments(args, 2)
         except TypeError:
             return
     else:
         print("\n[WARN] Please use the program this way:",
-              "python3 ft_coordinate_system.py 'X1, Y1, Z1' 'X2, Y2, Z2'")
+              'python3 ft_coordinate_system.py "X1, Y1, Z1" "X2, Y2, Z2"')
     print("\nUnpacking demonstration:")
     print("Player at: x=%d, y=%d, z=%d" % position)
     print("Coordinates: X=%d, Y=%d, Z=%d" % position)
+
 
 if __name__ == "__main__":
     main(sys.argv)
