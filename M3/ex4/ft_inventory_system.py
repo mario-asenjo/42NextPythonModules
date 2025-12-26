@@ -17,7 +17,7 @@ def print_inventory_info(inventory: dict) -> None:
     for g_ob in inventory.items():
         sub_dict: dict = g_ob[1]
         print(
-            f"{g_ob[0]} ({sub_dict.get("category")},"
+            f"{g_ob[0]} ({sub_dict.get("category")}, "
             f"{sub_dict.get("rarity")}): "
             f"{sub_dict.get("qty")}x @ {sub_dict.get("value")} gold each"
             f" = {sub_dict.get("qty") * sub_dict.get("value")} gold"
@@ -42,11 +42,29 @@ def transfer_potions(inv_from: dict, inv_to: dict, qty: int) -> bool:
         inv_to["potion"] = {"qty" : qty, "value" : 50, "category" : "consumable", "rarity" : "common"}
     return True
 
+
+def most_valuable_info(inventories: dict) -> str:
+    player_name: str
+    value: int
+    for name in inventories.keys():
+        inv: dict = inventories.get(name)
+        for obj in inv.keys():
+            attr: dict = inv.get(obj)
+            print(attr)
+
+
+def most_items_info(inventories: dict) -> str:
+    pass
+
+def retrieve_rarest_items(inventories: dict) -> str:
+    pass
+
+
 def main() -> None:
     alice_inventory: dict = {
         "sword" : {"qty" : 1, "value" : 500, "category" : "weapon", "rarity" : "rare"},
         "potion" : {"qty" : 5, "value" : 50, "category" : "consumable", "rarity" : "common"},
-        "shield" : {"qty" : 1, "value" : 200, "category" : "armor", "rarity" : "rare"}
+        "shield" : {"qty" : 1, "value" : 200, "category" : "armor", "rarity" : "uncommon"}
     }
     bob_inventory: dict = {
         "axe" : {"qty" : 1, "value" : 80, "category" : "weapon", "rarity" : "common"},
@@ -61,9 +79,11 @@ def main() -> None:
     print("\n=== Updated Inventories ===")
     print("Alice potions:", alice_inventory["potion"].get("qty"))
     print("Bob potions:", bob_inventory["potion"].get("qty"))
+    inventories: dict = {"alice": alice_inventory, "bob": bob_inventory}
     print("\n=== Inventory Analysis ===")
-    
-
+    print("Most valuable player:", most_valuable_info(inventories))
+    print("Most items:", most_items_info(inventories))
+    print("Rarest items:", retrieve_rarest_items(inventories))
 
 
 if __name__ == "__main__":
