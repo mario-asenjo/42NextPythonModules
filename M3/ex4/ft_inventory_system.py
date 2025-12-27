@@ -7,7 +7,7 @@ def get_categories_info(inventory: dict) -> str:
     ret: list[str] = []
     for key in  inventory.keys():
         ret.append(key + f"({inventory.get(key).get("qty")})")
-    return "".join(val+(", " if val != ret[-1] else "") for val in ret)
+    return ", ".join(val for val in ret)
 
 
 def print_inventory_info(inventory: dict) -> None:
@@ -45,20 +45,45 @@ def transfer_potions(inv_from: dict, inv_to: dict, qty: int) -> bool:
 
 def most_valuable_info(inventories: dict) -> str:
     player_name: str
-    value: int
+    value: int = 0
+    for name in inventories.keys():
+        calc_val: int = 0
+        inv: dict = inventories.get(name)
+        for obj in inv.keys():
+            attr: dict = inv.get(obj)
+            calc_val += attr.get("qty") * attr.get("value")
+            if calc_val > value:
+                value = calc_val
+                player_name = name
+        return f"{player_name.capitalize()} (%d gold)" % value
+
+
+def most_items_info(inventories: dict) -> str:
+    player_name: str
+    items: int = 0
+    for name in inventories.keys():
+        calc_val: int = 0
+        inv: dict = inventories.get(name)
+        for obj in inv.keys():
+            attr: dict = inv.get(obj)
+            calc_val += attr.get("qty")
+            if calc_val > items:
+                items = calc_val
+                player_name = name
+        return f"{player_name.capitalize()} (%d items)" % items
+
+
+def retrieve_rarest_items(inventories: dict) -> str:
+    rarest_objects: list[str] = []
     for name in inventories.keys():
         inv: dict = inventories.get(name)
         for obj in inv.keys():
             attr: dict = inv.get(obj)
-            print(attr)
-
-
-def most_items_info(inventories: dict) -> str:
-    pass
-
-def retrieve_rarest_items(inventories: dict) -> str:
-    pass
-
+            if attr.get("rarity") == "rare":
+                rarest_objects.append(obj)
+    return ", ".join(
+        obj for obj in rarest_objects
+    )
 
 def main() -> None:
     alice_inventory: dict = {
