@@ -30,7 +30,10 @@ def main(args: list[str]) -> None:
     print("=== Player Score Analytics ===")
     argc: int = len(args)
     if argc < 2:
-        print("No scores provided. Usage: python3 ft_score_analytics.py <score1> <score2> ...")
+        print(
+            "No scores provided. Usage: "
+            "python3 ft_score_analytics.py <score1> <score2> ..."
+        )
     else:
         numeric_list: list[int] = parse_numbers(args)
         analyze_scores(numeric_list)

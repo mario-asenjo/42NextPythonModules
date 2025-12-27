@@ -6,6 +6,7 @@ them to get info about what the user might want to do with the program
 
 import sys
 
+
 def main(args: list[str]) -> None:
     """
     Function that displays information on the
@@ -24,5 +25,7 @@ def main(args: list[str]) -> None:
             print(f"Argument {i}: {arg}")
             i += 1
     print("Total arguments:", argc)
+
+
 if __name__ == "__main__":
     main(sys.argv)

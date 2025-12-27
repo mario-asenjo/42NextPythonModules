@@ -6,9 +6,13 @@ import time
 from typing import Any, Generator
 
 
-def game_events_stream(num_events: int, seed: int = 42) -> Generator[tuple[str, int, str], Any, None]:
+def game_events_stream(
+        num_events: int,
+        seed: int = 42) -> Generator[tuple[str, int, str], Any, None]:
     players: tuple = ("alice", "bob", "charlie", "diana", "eve", "mario")
-    actions: tuple = ("killed monster", "found treasure", "leveled up", "mysterious action")
+    actions: tuple = (
+        "killed monster", "found treasure", "leveled up", "mysterious action"
+    )
     action_weights: tuple = (0.50, 0.15, 0.25, 0.1)
     rng = random.Random(seed)
 
