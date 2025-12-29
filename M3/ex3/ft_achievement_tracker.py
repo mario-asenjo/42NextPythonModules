@@ -1,6 +1,7 @@
 """
 This program simulates an achievement tracker system.
 """
+from hashlib import algorithms_available
 
 
 def main() -> None:

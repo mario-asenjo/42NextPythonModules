@@ -73,7 +73,6 @@ def main() -> None:
             treasure_events += 1
         if action == "leveled up":
             level_up_events += 1
-
         if action == "killed monster":
             monster_killed += 1
         if action == "mysterious action":
