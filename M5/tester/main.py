@@ -149,6 +149,7 @@ class PolymorphismTester:
 
             # Check type annotations first
             has_proper_typing, typing_issues = self.type_checker.check_file_typing(file_path)
+            print(has_proper_typing, typing_issues)
             if not has_proper_typing:
                 result.add_error("Type annotation issues found:")
                 for issue in typing_issues:
