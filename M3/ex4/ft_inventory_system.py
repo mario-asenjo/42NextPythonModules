@@ -4,6 +4,7 @@ Program that shows the use of dictionaries data structures.
 
 
 def get_categories_info(inventory: dict) -> str:
+    """Returns comma separated categories info of the inventory received"""
     ret: list[str] = []
     for key in inventory.keys():
         ret.append(key + f"({inventory.get(key).get('qty')})")
@@ -11,6 +12,7 @@ def get_categories_info(inventory: dict) -> str:
 
 
 def print_inventory_info(inventory: dict) -> None:
+    """Prints the inventory received with a specified format"""
     total_items: int = 0
     total_value: int = 0
     categories: dict = {}
@@ -33,6 +35,7 @@ def print_inventory_info(inventory: dict) -> None:
 
 
 def transfer_potions(inv_from: dict, inv_to: dict, qty: int) -> bool:
+    """Function to transfer potions from one inventory to another"""
     if inv_from.get("potion").get("qty") < qty:
         return False
     inv_from["potion"]["qty"] -= qty
@@ -49,6 +52,10 @@ def transfer_potions(inv_from: dict, inv_to: dict, qty: int) -> bool:
 
 
 def most_valuable_info(inventories: dict) -> str:
+    """
+    Returns a format with information of the most
+    valuable player in the inventory given
+    """
     player_name: str = ""
     value: int = 0
     for name in inventories.keys():
@@ -63,8 +70,12 @@ def most_valuable_info(inventories: dict) -> str:
     return f"{player_name.capitalize()} (%d gold)" % value
 
 
-def most_items_info(inventories: dict) -> str:
-    player_name: str
+def most_items_info(inventories: dict) -> str | None:
+    """
+    Returns a format with information of the
+    player with most items in the inventory received
+    """
+    player_name: str = ""
     items: int = 0
     for name in inventories.keys():
         calc_val: int = 0
@@ -76,9 +87,11 @@ def most_items_info(inventories: dict) -> str:
                 items = calc_val
                 player_name = name
         return f"{player_name.capitalize()} (%d items)" % items
+    return None
 
 
 def retrieve_rarest_items(inventories: dict) -> str:
+    """Retrieves a format with the rarest items on the inventory received"""
     rarest_objects: list[str] = []
     for name in inventories.keys():
         inv: dict = inventories.get(name)
@@ -92,6 +105,7 @@ def retrieve_rarest_items(inventories: dict) -> str:
 
 
 def main() -> None:
+    """Main function of the program that generates data and calls functions"""
     alice_inventory: dict = {
         "sword": {
             "qty": 1,

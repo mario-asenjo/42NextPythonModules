@@ -4,6 +4,7 @@ This program demonstrates file creation and writing
 
 
 def main() -> None:
+    """Main function in charge of writing in a file"""
     data: list[str] = [
         "{[}ENTRY 001 {]} New quantum algorith discovered",
         "{[}ENTRY 002 {]} Efficiency increased by 347 %",

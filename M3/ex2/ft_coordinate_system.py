@@ -9,10 +9,12 @@ import math
 
 def calculate_distance(x1: int, y1: int, z1: int, x2: int, y2: int,
                        z2: int) -> float:
+    """Calculates the distance between two 3D points"""
     return math.sqrt((x2 - x1)**2 + (y2 - y1)**2 + (z2 - z1)**2)
 
 
 def parse_arguments(args: list[str], pos: int) -> tuple[int, int, int] | None:
+    """Serializes a list of string into a list of int"""
     start: tuple[int, int, int]
     try:
         start = (int(args[pos].split(',')[0]), int(args[pos].split(',')[1]),
@@ -24,6 +26,10 @@ def parse_arguments(args: list[str], pos: int) -> tuple[int, int, int] | None:
 
 
 def main(args: list[str]) -> None:
+    """
+    Main function of the program, in charge of setting the positions
+    and calling the helper functions
+    """
     initial_pos: tuple
     print("=== Game Coordinate System ===")
     argc: int = len(args)

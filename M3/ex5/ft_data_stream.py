@@ -9,6 +9,7 @@ from typing import Any, Generator
 def game_events_stream(
         num_events: int,
         seed: int = 42) -> Generator[tuple[str, int, str], Any, None]:
+    """Function that easily generates game data simulating subject"""
     players: tuple = ("alice", "bob", "charlie", "diana", "eve", "mario")
     actions: tuple = (
         "killed monster", "found treasure", "leveled up", "mysterious action"
@@ -24,6 +25,7 @@ def game_events_stream(
 
 
 def fibonacci_stream() -> Generator[int, None, None]:
+    """Function that generates fibonacci stream"""
     a = 0
     b = 1
     while True:
@@ -32,6 +34,7 @@ def fibonacci_stream() -> Generator[int, None, None]:
 
 
 def is_prime(n: int) -> bool:
+    """Function that checks if a number is prime"""
     i: int = 2
     while i * i <= n:
         if n % i == 0:
@@ -41,6 +44,7 @@ def is_prime(n: int) -> bool:
 
 
 def primes_stream() -> Generator[int, None, None]:
+    """Function that generates prime numbers stream"""
     n = 2
     while True:
         if is_prime(n):
@@ -49,6 +53,7 @@ def primes_stream() -> Generator[int, None, None]:
 
 
 def main() -> None:
+    """Main function of the program calls functions and formats output"""
     n_events: int = 1000
     seed: int = 42
     total: int = 0

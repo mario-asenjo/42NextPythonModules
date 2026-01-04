@@ -7,6 +7,7 @@ import sys
 
 
 def parse_numbers(args: list[str]) -> list[int]:
+    """Serializes a string list into an integer list"""
     numeric_list: list[int] = []
     for arg in args[1:]:
         try:
@@ -17,6 +18,7 @@ def parse_numbers(args: list[str]) -> list[int]:
 
 
 def analyze_scores(scores: list[int]) -> None:
+    """Prints information on the recieved list"""
     print("Scores processed:", scores)
     print("Total players:", len(scores))
     print("Total score:", sum(scores))
@@ -27,6 +29,7 @@ def analyze_scores(scores: list[int]) -> None:
 
 
 def main(args: list[str]) -> None:
+    """Main function, receives a list of strings, sys.argv, and analizes it"""
     print("=== Player Score Analytics ===")
     argc: int = len(args)
     if argc < 2:

@@ -1,9 +1,10 @@
 """
-
+Program that simulates an analytics dashboard
 """
 
 
 def retrieve_players_list() -> list[dict]:
+    """Function that returns a list with players info in dicts"""
     return [
         {
             "name": "alice",
@@ -59,6 +60,7 @@ def retrieve_players_list() -> list[dict]:
 
 
 def main() -> None:
+    """Main function of the program that shows skills in analyzing data"""
     players: list[dict] = retrieve_players_list()
     high_scorers: list = [
         player["name"] for player in players if player["score"] > 2000
