@@ -43,3 +43,4 @@ if __name__ == "__main__":
     print("=== Day 7 ===")
     print(rose.get_info())
     print(f"Growth this week: +{rose.height() - height}cm")
+    print(rose)

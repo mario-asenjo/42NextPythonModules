@@ -30,6 +30,9 @@ class Plant:
         """Retrieves basic info of a plant"""
         return f"{self._name} ({name}): {self._height}cm, {self._age} days"
 
+    def to_string(self) -> str:
+        return f"{self._name} me come la polla"
+
 
 if __name__ == "__main__":
     print("=== Plant Factory Output ===")
@@ -39,3 +42,5 @@ if __name__ == "__main__":
     sunflower: Plant = Plant("Sunflower", 80, 45)
     fern: Plant = Plant("Fern", 15, 120)
     print(f"Total plants created: {Plant.total_plants_created}")
+    print(oak.to_string())
+    print(rose.to_string())

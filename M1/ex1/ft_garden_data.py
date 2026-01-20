@@ -6,11 +6,12 @@ Initialize 3 Plants and show their basic info.
 
 class Plant:
     """Plant class containing, name, height and age"""
-    def __init__(self, name: str, height: int, age: int):
+    def __init__(self, name: str, height: int, age: int) -> None:
         """Initialize a Plant with a name, heigh and age."""
-        self.name = name
-        self.height = height
-        self.age = age
+        self.name: str = name
+        self.height: int = height
+        self.age: int = age
+
 
     def get_info(self, name: str | None = None) -> str:
         """Retrieves basic info of a plant"""

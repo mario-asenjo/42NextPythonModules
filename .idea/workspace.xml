@@ -5,11 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="42d169ee-9903-4c67-a433-b2a7c8725056" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/githubRemote.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/M5/solution/ex1/data_stream.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/githubRemote.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/githubRemote.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/M1/ex1/ft_garden_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/M1/ex1/ft_garden_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/M1/ex2/ft_plant_growth.py" beforeDir="false" afterPath="$PROJECT_DIR$/M1/ex2/ft_plant_growth.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/M1/ex3/ft_plant_factory.py" beforeDir="false" afterPath="$PROJECT_DIR$/M1/ex3/ft_plant_factory.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/M4/helpers/sample_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/M4/helpers/sample_data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/M5/solution/ex1/data_stream.py" beforeDir="false" afterPath="$PROJECT_DIR$/M5/solution/ex1/data_stream.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,12 +46,15 @@
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Python.data_generator.executor": "Run",
+    "Python.data_stream.executor": "Run",
     "Python.ft_achievement_tracker.executor": "Run",
     "Python.ft_ancient_text.executor": "Run",
     "Python.ft_archive_creation.executor": "Run",
     "Python.ft_crisis_response.executor": "Run",
     "Python.ft_data_stream.executor": "Run",
     "Python.ft_inventory_system.executor": "Run",
+    "Python.ft_plant_factory.executor": "Run",
+    "Python.ft_plant_growth.executor": "Run",
     "Python.ft_plant_types.executor": "Run",
     "Python.ft_stream_management.executor": "Run",
     "Python.ft_vault_security.executor": "Run",
@@ -71,7 +77,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "editor.preferences.inline.completion",
+    "settings.editor.selected.configurable": "preferences.editor",
     "to.speed.mode.migration.done": "true",
     "vue.rearranger.settings.migration": "true"
   }
@@ -98,7 +104,7 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="SDK_NAME" value="Python 3.10 (githubRemote)" />
+      <option name="SDK_NAME" value="Python 3.12 (42NextPythonModules)" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/M4/helpers" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -147,6 +153,9 @@
       <workItem from="1767395700595" duration="9153000" />
       <workItem from="1767543745337" duration="7674000" />
       <workItem from="1767623382612" duration="4427000" />
+      <workItem from="1767885660907" duration="4788000" />
+      <workItem from="1768083034775" duration="3562000" />
+      <workItem from="1768932260572" duration="7655000" />
     </task>
     <servers />
   </component>
@@ -154,18 +163,21 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/42NextPythonModules$ft_inventory_system.coverage" NAME="ft_inventory_system Coverage Results" MODIFIED="1767544456102" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/M3/ex4" />
-    <SUITE FILE_PATH="coverage/42NextPythonModules$ft_achievement_tracker.coverage" NAME="ft_achievement_tracker Coverage Results" MODIFIED="1766926037240" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/M3/ex3" />
-    <SUITE FILE_PATH="coverage/42NextPythonModules$data_generator.coverage" NAME="data_generator Coverage Results" MODIFIED="1767396027105" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/M4/helpers" />
-    <SUITE FILE_PATH="coverage/42NextPythonModules$ft_stream_management.coverage" NAME="ft_stream_management Coverage Results" MODIFIED="1767397044376" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/M4/ex2" />
-    <SUITE FILE_PATH="coverage/githubRemote$stream_processor.coverage" NAME="stream_processor Coverage Results" MODIFIED="1767623552098" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/M5/solution/ex0" />
-    <SUITE FILE_PATH="coverage/42NextPythonModules$ft_data_stream.coverage" NAME="ft_data_stream Coverage Results" MODIFIED="1766789966828" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/M3/ex5" />
     <SUITE FILE_PATH="coverage/42NextPythonModules$ft_ancient_text.coverage" NAME="ft_ancient_text Coverage Results" MODIFIED="1767545030087" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/M4/ex0" />
-    <SUITE FILE_PATH="coverage/42NextPythonModules$main.coverage" NAME="main Coverage Results" MODIFIED="1767548298969" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/M5/tester" />
-    <SUITE FILE_PATH="coverage/42NextPythonModules$stream_processor.coverage" NAME="stream_processor Coverage Results" MODIFIED="1767550879800" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/M5/solution/ex0" />
+    <SUITE FILE_PATH="coverage/42NextPythonModules$ft_plant_factory.coverage" NAME="ft_plant_factory Coverage Results" MODIFIED="1768150447931" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/M1/ex3" />
+    <SUITE FILE_PATH="coverage/42NextPythonModules$ft_plant_growth.coverage" NAME="ft_plant_growth Coverage Results" MODIFIED="1767888551128" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/M1/ex2" />
+    <SUITE FILE_PATH="coverage/42NextPythonModules$ft_achievement_tracker.coverage" NAME="ft_achievement_tracker Coverage Results" MODIFIED="1766926037240" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/M3/ex3" />
     <SUITE FILE_PATH="coverage/42NextPythonModules$ft_vault_security.coverage" NAME="ft_vault_security Coverage Results" MODIFIED="1767398368827" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/M4/ex3" />
+    <SUITE FILE_PATH="coverage/42NextPythonModules$data_generator.coverage" NAME="data_generator Coverage Results" MODIFIED="1768939561874" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/M4/helpers" />
+    <SUITE FILE_PATH="coverage/42NextPythonModules$ft_inventory_system.coverage" NAME="ft_inventory_system Coverage Results" MODIFIED="1767544456102" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/M3/ex4" />
+    <SUITE FILE_PATH="coverage/42NextPythonModules$main.coverage" NAME="main Coverage Results" MODIFIED="1768940031380" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/M5/tester" />
     <SUITE FILE_PATH="coverage/42NextPythonModules$ft_archive_creation.coverage" NAME="ft_archive_creation Coverage Results" MODIFIED="1766933366880" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/M4/ex1" />
     <SUITE FILE_PATH="coverage/42NextPythonModules$ft_plant_types.coverage" NAME="ft_plant_types Coverage Results" MODIFIED="1765278787751" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/M1/ex5" />
+    <SUITE FILE_PATH="coverage/42NextPythonModules$data_stream.coverage" NAME="data_stream Coverage Results" MODIFIED="1768939994051" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/M5/solution/ex1" />
+    <SUITE FILE_PATH="coverage/42NextPythonModules$ft_stream_management.coverage" NAME="ft_stream_management Coverage Results" MODIFIED="1767397044376" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/M4/ex2" />
+    <SUITE FILE_PATH="coverage/42NextPythonModules$ft_data_stream.coverage" NAME="ft_data_stream Coverage Results" MODIFIED="1766789966828" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/M3/ex5" />
     <SUITE FILE_PATH="coverage/42NextPythonModules$ft_crisis_response.coverage" NAME="ft_crisis_response Coverage Results" MODIFIED="1767401217494" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/M4/ex4" />
+    <SUITE FILE_PATH="coverage/42NextPythonModules$stream_processor.coverage" NAME="stream_processor Coverage Results" MODIFIED="1767550879800" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/M5/solution/ex0" />
+    <SUITE FILE_PATH="coverage/githubRemote$stream_processor.coverage" NAME="stream_processor Coverage Results" MODIFIED="1767623552098" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/M5/solution/ex0" />
   </component>
 </project>
