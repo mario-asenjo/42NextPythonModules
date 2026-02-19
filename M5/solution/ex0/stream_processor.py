@@ -46,8 +46,8 @@ class NumericProcessor(DataProcessor):
 
     def format_output(self) -> str:
         return (f"Processed {len(self.__numbers)} numeric values, "
-                  f"sum={sum(self.__numbers)}, "
-                  f"avg={sum(self.__numbers)/len(self.__numbers)}")
+                f"sum={sum(self.__numbers)}, "
+                f"avg={sum(self.__numbers)/len(self.__numbers)}")
 
     def print_routine(self) -> None:
         print("\nInitializing Numeric Processor...")
@@ -63,14 +63,16 @@ class TextProcessor(DataProcessor):
         return self.__text
 
     def validate(self) -> str:
-        self._is_data_verified = all(phrase.isalnum() for phrase in self.__text.split(' '))
+        self._is_data_verified = all(
+            phrase.isalnum() for phrase in self.__text.split(' ')
+        )
         if not self._is_data_verified:
             raise ValueError
         return "Text data verified"
 
     def format_output(self) -> str:
         return (f"Processed text: {len(self.__text)} characters, "
-                  f"{len(self.__text.split(' '))} words")
+                f"{len(self.__text.split(' '))} words")
 
     def print_routine(self) -> None:
         print("\nInitializing Text Processor...")
@@ -100,7 +102,8 @@ class LogProcessor(DataProcessor):
 
     def format_output(self) -> str:
         self.validate()
-        log_level = "[ALERT]" if self.log_type == "ERROR" else f"[{self.log_type}]"
+        log_level = "[ALERT]" if self.log_type == "ERROR"\
+                    else f"[{self.log_type}]"
         return f"{log_level} {self.log_type} level detected: {self.message}"
 
     def print_routine(self) -> None:
@@ -133,6 +136,7 @@ def main() -> None:
     log.print_routine()
     polymorphic_demo()
     print("\nFoundation systems online. Nexus ready for advanced streams.")
+
 
 if __name__ == "__main__":
     main()
