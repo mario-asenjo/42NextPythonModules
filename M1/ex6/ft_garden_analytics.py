@@ -200,5 +200,6 @@ def main() -> None:
     alice_manager.grow_all_plants()
     alice_manager.print_report(bob_manager)
 
+
 if __name__ == "__main__":
     main()

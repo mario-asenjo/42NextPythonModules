@@ -74,7 +74,7 @@ class GardenManager:
         raise WaterError("Not enought water in the tank")
 
 
-if __name__ == "__main__":
+def main() -> None:
     print("=== Garden Management System ===")
     manager: GardenManager = GardenManager()
     print("\nAdding plants to garden...")
@@ -103,3 +103,7 @@ if __name__ == "__main__":
         print("Caught GardenError:", e)
     print("System recovered and continuing...")
     print("\nGarden management system test complete!")
+
+
+if __name__ == "__main__":
+    main()
