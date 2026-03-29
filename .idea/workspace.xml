@@ -5,14 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="42d169ee-9903-4c67-a433-b2a7c8725056" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/M7/my_repo/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/M7/my_repo/ex0/Card.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/M7/my_repo/ex0/CreatureCard.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/M7/my_repo/ex0/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/M7/my_repo/ex0/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/M7/my_repo/ex1/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/M7/resources/card_generator.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/M5_new/coorr.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/M5_new/solution/ex0/stream_processor.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/M5_new/solution/ex1/data_stream.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/M5_new/solution/ex2/nexus_pipeline.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/M5_new/tester/main.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,58 +39,59 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python.__init__.executor": "Run",
-    "Python.card_generator.executor": "Run",
-    "Python.data_generator.executor": "Run",
-    "Python.data_stream.executor": "Run",
-    "Python.ft_achievement_tracker.executor": "Run",
-    "Python.ft_ancient_text.executor": "Run",
-    "Python.ft_archive_creation.executor": "Run",
-    "Python.ft_circular_curse.executor": "Run",
-    "Python.ft_crisis_response.executor": "Run",
-    "Python.ft_data_stream.executor": "Run",
-    "Python.ft_garden_manager.executor": "Run",
-    "Python.ft_import_transmutation.executor": "Run",
-    "Python.ft_inventory_system.executor": "Run",
-    "Python.ft_pathway_debate.executor": "Run",
-    "Python.ft_plant_factory.executor": "Run",
-    "Python.ft_plant_growth.executor": "Run",
-    "Python.ft_plant_types.executor": "Run",
-    "Python.ft_sacred_scroll.executor": "Run",
-    "Python.ft_stream_management.executor": "Run",
-    "Python.ft_vault_security.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.nexus_pipeline.executor": "Run",
-    "Python.spellbook.executor": "Run",
-    "Python.stream_processor.executor": "Run",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "ai.playground.ignore.import.keys.banner.in.settings": "true",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "C:/Users/masenjo/Documents/GitHub/42NextPythonModules/M7",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.editor",
-    "to.speed.mode.migration.done": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.__init__.executor&quot;: &quot;Run&quot;,
+    &quot;Python.card_generator.executor&quot;: &quot;Run&quot;,
+    &quot;Python.data_generator.executor&quot;: &quot;Run&quot;,
+    &quot;Python.data_stream.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ft_achievement_tracker.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ft_ancient_text.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ft_archive_creation.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ft_circular_curse.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ft_crisis_response.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ft_data_stream.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ft_garden_manager.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ft_import_transmutation.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ft_inventory_system.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ft_pathway_debate.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ft_plant_factory.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ft_plant_growth.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ft_plant_types.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ft_sacred_scroll.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ft_stream_management.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ft_vault_security.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.nexus_pipeline.executor&quot;: &quot;Run&quot;,
+    &quot;Python.spellbook.executor&quot;: &quot;Run&quot;,
+    &quot;Python.stream_processor.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;ai.playground.ignore.import.keys.banner.in.settings&quot;: &quot;true&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/masenjo/Documents/GitHub/42NextPythonModules/M5_new/tester&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\masenjo\Documents\GitHub\42NextPythonModules\M5_new\tester" />
       <recent name="C:\Users\masenjo\Documents\GitHub\42NextPythonModules\M7" />
       <recent name="C:\Users\masen\Documents\GitHub\42NextPythonModules\M4\helpers" />
     </key>
@@ -176,6 +175,8 @@
       <workItem from="1772131566190" duration="1478000" />
       <workItem from="1772199848165" duration="659000" />
       <workItem from="1772802441714" duration="5567000" />
+      <workItem from="1774778487021" duration="8091000" />
+      <workItem from="1774791366839" duration="1376000" />
     </task>
     <servers />
   </component>
