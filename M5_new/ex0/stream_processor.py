@@ -74,10 +74,10 @@ class LogProcessor(DataProcessor):
         
         level, message = data.split(":", 1)
         level = level.strip().upper()
-        message = message.strip()
+        message = message.strip()[:-1]
 
-        tag: str = "[ALERT]" if level == "ERROR" else f"[{level}]"
-        return f"{tag} {level} level detected: {message}"
+        tag: str = "[ALERT]" if level[1:] == "ERROR" else f"[{level[1:]}]"
+        return f"{tag} {level[1:]} level detected: {message}"
         
 
     def validate(self, data: Any) -> bool:
@@ -86,7 +86,7 @@ class LogProcessor(DataProcessor):
 
         level, message = data.split(":", 1)
         return (
-            level.strip().upper() in self.VALID_LEVELS
+            level.strip().upper()[1:] in self.VALID_LEVELS
             and len(message.strip()) > 0
         )
 
@@ -105,7 +105,7 @@ def run_processor(processor: DataProcessor, data: Any) -> None:
 
         verified: str = "verified" if processor.validate(data) else "not verified"
 
-        print(f"Processing data: {data}")
+        print(f'Processing data: {data}')
         print(f"Validation: {p_type} {verified}")
         print(processor.format_output(result))
     except ValueError as e:
@@ -119,7 +119,7 @@ def polymorphic_demo() -> None:
     processors: list[tuple[DataProcessor, Any]] = [
         (NumericProcessor(), [2, 2, 2]),
         (TextProcessor(), "Hello Nexus World"),
-        (LogProcessor(), "INFO: System ready")
+        (LogProcessor(), '"INFO: System ready"')
     ]
 
     for i, (processor, data) in enumerate(processors, start=1):
@@ -138,10 +138,10 @@ def main() -> None:
     run_processor(NumericProcessor(), [1, 2, 3, 4, 5])
 
     print("\nInitializing Text Processor...")
-    run_processor(TextProcessor(), "Hello Nexus World")
+    run_processor(TextProcessor(), '"Hello Nexus World"')
 
     print("\nInitializing Log Processor...")
-    run_processor(LogProcessor(), "ERROR: Connection timeout")
+    run_processor(LogProcessor(), '"ERROR: Connection timeout"')
 
     polymorphic_demo()
 

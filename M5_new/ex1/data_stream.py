@@ -48,12 +48,13 @@ class DataStream:
 class SensorStream(DataStream):
     """Process environmental sensor data"""
 
-    def __init__(self, stream_id: str):
+    def __init__(self, stream_id: str) -> None:
         print("Initializing Sensor Stream...")
         super().__init__(stream_id, "Environmental Data")
         print(f"Stream ID: {self._stream_id}, Type: {self._stream_type}")
 
     def process_batch(self, data_batch: List[Any]) -> str:
+        average: float = 0
         try:
             cleaned_batch: List[str] = [
                 str(item).strip() for item in data_batch if str(item).strip()
@@ -75,13 +76,13 @@ class SensorStream(DataStream):
                 if metric == "temp":
                     temperatures.append(float(value))
 
-                average: float = sum(temperatures) / len(temperatures)
-                return (
-                    f"Sensor analysis: {len(cleaned_batch)} readings processed, "
-                    f"avg temp: {average:.1f} ºC"
-                )
+                average = sum(temperatures) / len(temperatures)
         except (ValueError, TypeError) as error:
             raise ValueError(f"Sensor processing failed: {error}") from error
+        return (
+            f"Sensor analysis: {len(cleaned_batch)} readings processed, "
+            f"avg temp: {average:.1f} ºC"
+        )
 
     def filter_data(
             self,
@@ -109,7 +110,7 @@ class SensorStream(DataStream):
 class TransactionStream(DataStream):
     """Process financial transaction data"""
 
-    def __init__(self, stream_id: str):
+    def __init__(self, stream_id: str) -> None:
         print("Initializing Transaction Stream...")
         super().__init__(stream_id, "Financial Data")
         print(f"Stram ID: {self._stream_id}, Type: {self._stream_type}")
@@ -177,7 +178,7 @@ class TransactionStream(DataStream):
 class EventStream(DataStream):
     """Process system event data"""
 
-    def __init__(self, stream_id: str):
+    def __init__(self, stream_id: str) -> None:
         print("Initializing Event Stream...")
         super().__init__(stream_id, "System Events")
         print(f"Stream ID: {self._stream_id}, Type: {self._stream_type}")
@@ -236,7 +237,7 @@ class StreamProcessor:
             self,
             streams: List[DataStream],
             batches: List[List[Any]]
-    ):
+    ) -> None:
         print("\n=== Polymorphic Stream Processing ===")
         print("Processing mixed stream types through unified interface...")
         print("\nBatch 1 Results:")
