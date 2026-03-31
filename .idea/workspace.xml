@@ -5,12 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="42d169ee-9903-4c67-a433-b2a7c8725056" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/M7/my_repo/ex1/ArtifactCard.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/M7/my_repo/ex1/Deck.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/M7/my_repo/ex1/SpellCard.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/M7/my_repo/ex1/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/M5_new/coorr.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/M5_new/solution/ex0/stream_processor.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/M5_new/solution/ex1/data_stream.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/M5_new/solution/ex2/nexus_pipeline.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/M5_new/tester/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/M7/my_repo/ex0/CreatureCard.py" beforeDir="false" afterPath="$PROJECT_DIR$/M7/my_repo/ex0/CreatureCard.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/M7/my_repo/ex0/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/M7/my_repo/ex0/__init__.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,6 +178,7 @@
       <workItem from="1772802441714" duration="5567000" />
       <workItem from="1774778487021" duration="8091000" />
       <workItem from="1774791366839" duration="1376000" />
+      <workItem from="1774949307181" duration="998000" />
     </task>
     <servers />
   </component>
@@ -204,7 +206,7 @@
     <SUITE FILE_PATH="coverage/42NextPythonModules$data_stream.coverage" NAME="data_stream Coverage Results" MODIFIED="1769007061487" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/M5/solution/ex1" />
     <SUITE FILE_PATH="coverage/42NextPythonModules$ft_circular_curse.coverage" NAME="ft_circular_curse Coverage Results" MODIFIED="1771849408243" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/M6" />
     <SUITE FILE_PATH="coverage/42NextPythonModules$ft_plant_factory.coverage" NAME="ft_plant_factory Coverage Results" MODIFIED="1768150447931" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/M1/ex3" />
-    <SUITE FILE_PATH="coverage/42NextPythonModules$main.coverage" NAME="main Coverage Results" MODIFIED="1772808453837" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/M7/my_repo/ex0" />
+    <SUITE FILE_PATH="coverage/42NextPythonModules$main.coverage" NAME="main Coverage Results" MODIFIED="1774950014532" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/M7/my_repo/ex0" />
     <SUITE FILE_PATH="coverage/42NextPythonModules$ft_inventory_system.coverage" NAME="ft_inventory_system Coverage Results" MODIFIED="1767544456102" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/M3/ex4" />
     <SUITE FILE_PATH="coverage/githubRemote$stream_processor.coverage" NAME="stream_processor Coverage Results" MODIFIED="1767623552098" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/M5/solution/ex0" />
     <SUITE FILE_PATH="coverage/42NextPythonModules$ft_vault_security.coverage" NAME="ft_vault_security Coverage Results" MODIFIED="1767398368827" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/M4/ex3" />

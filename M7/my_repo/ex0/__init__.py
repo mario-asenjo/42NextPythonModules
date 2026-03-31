@@ -3,10 +3,7 @@ Exercise 0:
 """
 
 
-from Card import Card
+from ex0.Card import Card
+from ex0.CreatureCard import CreatureCard
 
-from CreatureCard import CreatureCard
-
-from main import main
-
-__all__ = ["Card", "CreatureCard", "main"]
+__all__ = ["Card", "CreatureCard"]

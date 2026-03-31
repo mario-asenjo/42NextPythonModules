@@ -3,10 +3,11 @@ Demo for Card and CreatureCard implementations.
 """
 
 
-from M7.my_repo.ex0 import CreatureCard
+from ex0.CreatureCard import CreatureCard
 
 
 def main() -> None:
+    """Demonstrate the functionality of the abstract card foundation"""
     print("\n=== DataDeck Card Foundation ===\n")
     print("Testing Abstract Base Class Design:\n")
     fire_dragon_card: CreatureCard = CreatureCard(
