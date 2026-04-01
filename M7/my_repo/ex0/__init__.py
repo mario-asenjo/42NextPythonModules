@@ -1,5 +1,5 @@
 """
-Exercise 0:
+Exercise 0 package
 """
 
 

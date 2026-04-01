@@ -35,8 +35,7 @@ class AggressiveStrategy(GameStrategy):
                 damage_dealt += card_info.get("attack", 0)
                 battlefield.append(card)
             elif card_type == "Spell":
-                if card_info.get("effect_type") == "damage":
-                    damage_dealt += 3
+                damage_dealt += 3
             elif card_type == "Artifact":
                 damage_dealt += 0
 

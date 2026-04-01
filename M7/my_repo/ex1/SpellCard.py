@@ -7,7 +7,7 @@ from ex0 import Card
 class SpellCard(Card):
     """Concrete implementation of a spell card"""
 
-    VALID_EFECTS = ("damage", "heal", "buff", "debuff")
+    VALID_EFFECTS: tuple = ("damage", "heal", "buff", "debuff")
 
     def __init__(self, name: str, cost: int,
                  rarity: str, effect_type: str) -> None:
@@ -20,7 +20,7 @@ class SpellCard(Card):
     @staticmethod
     def validate_effect(effect: str) -> str:
         """Validate the spell effect type"""
-        if effect not in SpellCard.VALID_EFECTS:
+        if effect not in SpellCard.VALID_EFFECTS:
             raise ValueError(
                 "Effect must be one of: damage, heal, buff or debuff"
             )

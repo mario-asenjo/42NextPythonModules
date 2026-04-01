@@ -11,7 +11,7 @@ class GameStrategy(ABC):
     """
 
     @abstractmethod
-    def execute_turn(self, hand: list, battefield: list) -> dict:
+    def execute_turn(self, hand: list, battlefield: list) -> dict:
         """
         Execute one turn using the cards available in hand and battlefield
         """

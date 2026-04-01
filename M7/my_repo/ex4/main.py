@@ -10,8 +10,8 @@ def main() -> None:
     """
     Demonstrate the tournament platform
     """
-    print("=== DataDeck Tournament Platform ===")
-    print("Registering Tournament Cards...")
+    print("=== DataDeck Tournament Platform ===\n")
+    print("Registering Tournament Cards...\n")
 
     platform = TournamentPlatform()
 
@@ -45,18 +45,18 @@ def main() -> None:
     print(f"{fire_dragon.get_card_info()['name']} (ID: {dragon_id}):")
     print("- Interfaces: [Card, Combatable, Rankable]")
     print(f"- Rating: {dragon_rank['rating']}")
-    print(f"- Record: {dragon_rank['wins']}-{dragon_rank['losses']}")
+    print(f"- Record: {dragon_rank['wins']}-{dragon_rank['losses']}\n")
 
     print(f"{ice_wizard.get_card_info()['name']} (ID: {wizard_id}):")
     print("- Interfaces: [Card, Combatable, Rankable]")
     print(f"- Rating: {wizard_rank['rating']}")
-    print(f"- Record: {wizard_rank['wins']}-{wizard_rank['losses']}")
+    print(f"- Record: {wizard_rank['wins']}-{wizard_rank['losses']}\n")
 
     print("Creating tournament match...")
     match_result = platform.create_match(dragon_id, wizard_id)
     print("Match result:", match_result)
 
-    print("Tournament Leaderboard:")
+    print("\nTournament Leaderboard:")
     leaderboard = platform.get_leaderboard()
     for index, card in enumerate(leaderboard, start=1):
         rank_info = card.get_rank_info()
@@ -65,10 +65,10 @@ def main() -> None:
             f"({rank_info['wins']}-{rank_info['losses']})"
         )
 
-    print("Platform Report:")
+    print("\nPlatform Report:")
     print(platform.generate_tournament_report())
 
-    print("=== Tournament Platform Successfully Deployed! ===")
+    print("\n=== Tournament Platform Successfully Deployed! ===")
     print("All abstract patterns working together harmoniously!")
 
 
