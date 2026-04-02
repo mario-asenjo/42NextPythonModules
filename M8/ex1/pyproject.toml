@@ -1,0 +1,17 @@
+[tool.poetry]
+package-mode = false
+name = "loading-programs"
+version = "0.1.0"
+description = "Exercise 01 for The Matrix module"
+authors = ["masenjo masenjo@student.42madrid.com"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pandas = "*"
+numpy = "*"
+matplotlib = "*"
+requests = "2.31.0"
+
+[build.system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
